@@ -1,0 +1,94 @@
+server:
+  port: 9001
+  tomcat:
+    uri-encoding: utf-8
+  max-http-header-size: 10240
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  shutdown: graceful
+logging:
+  #  config: classpath:log4j2-dev.xml
+  level:
+    com.imooc: debug
+spring:
+  application:
+    name: assist
+  resources:
+    static-locations: classpath:/static/
+  #    static-locations: file:D:/dist/static
+  #    static-locations: /data/test/static
+  servlet:
+    multipart:
+      max-file-size: 102400000
+      max-request-size: 102400000
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://111111111111111111111111111111111111111
+    #指定schema
+    #?currentSchema=jssft_bmsoft
+    username: 11111111111
+    password: 22222222222
+    hikari:
+      connection-init-sql: 'select 1'
+      idle-timeout: 50000
+      max-lifetime: 60000
+      maximum-pool-size: 50
+      minimum-idle: 10
+      connection-timeout: 60000
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+#  data:
+#    mongodb:
+#      host: 47.100.253.160
+#      port: 27017
+#      database: sun_foodie
+#      username: sun_foodie
+#      password: java@ernest.com
+#  elasticsearch:
+#    rest:
+#      username: elastic
+#      password: java@ernest.com
+#      connection-timeout: 10s
+#      uris:
+#        - 47.100.253.160:11001
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.shadow.model
+  configuration:
+    map-underscore-to-camel-case: true
+    shrink-whitespaces-in-sql: true
+    call-setters-on-nulls: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis:
+  type-aliases-package: com.shadow.model          # 所有POJO类所在包路径
+  mapper-locations: classpath:mapper/**/*.xml      # mapper映射文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+pagehelper:
+  helperDialect: postgreSql # 设置数据库类型 postgreSql mysql
+  reasonable: true #开启合理化：页码<=0 查询第一页，页码>=总页数查询最后一页
+  supportMethodsArguments: true #支持通过 Mapper 接口参数来传递分页参数
+  params: count=countSql   # 参数  成员变量 = ${ xx}
+  offsetAsPageNum: true #该参数默认为false 设置为true时，会将RowBounds第一个参数offset当成pageNum页码使用,和startPage中的pageNum效果一样
+  rowBoundsWithCount: true #设置为true时，使用RowBounds分页会进行count查询
+  returnPageInfo: true #总是返回PageInfo类型,check检查返回类型是否为PageInfo,none返回Page
+
+#okhttp:
+#  connectTimeoutMinu: 5
+#  keepAliveDurationMinu: 10
+#  maxIdle: 100
+#  readTimeoutMinu: 5
+#  writeTimeoutMinu: 5
+
+indexpages:
+  #天天吃货首页
+  frontPage: http://localhost:8080/index
+
+

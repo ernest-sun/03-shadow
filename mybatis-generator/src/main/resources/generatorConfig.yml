@@ -1,0 +1,39 @@
+mybatisGenerator:
+  datasource:
+    type: mysql
+    address: 47.100.253.160:3308
+    db: foodie-shop-dev
+    username: root
+    password: JAVA_sun1998@163.com
+
+  targetPackage:
+    model: com.shadow.model
+    mapper: com.shadow.mapper
+    javaXmlFilesSamePackage: false
+
+  targetRuntime: MyBatis3Simple
+  mapperSuffixName: mapper
+  java8: false
+  disableExample: true
+
+  plugins:
+    comment: true
+    lombok: true
+    swagger: true
+    mapperAnnotation: true
+    serializable: true
+
+  tables:
+    - carousel
+    - category
+    - items
+    - items_comments
+    - items_img
+    - items_param
+    - items_spec
+    - order_items
+    - order_status
+    - orders
+    - stu
+    - user_address
+    - users
