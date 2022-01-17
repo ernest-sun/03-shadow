@@ -26,11 +26,11 @@ spring:
       max-request-size: 102400000
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://111111111111111111111111111111111111111
+    url: jdbc:postgresql://101.35.90.4:32432/sft_bd?currentSchema=jssft_bmsoft
     #指定schema
     #?currentSchema=jssft_bmsoft
-    username: 11111111111
-    password: 22222222222
+    username: postgres
+    password: Bmsoft@2021
     hikari:
       connection-init-sql: 'select 1'
       idle-timeout: 50000
