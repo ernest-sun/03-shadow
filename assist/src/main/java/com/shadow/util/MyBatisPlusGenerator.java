@@ -62,10 +62,10 @@ public class MyBatisPlusGenerator {
         .setDriverName("org.postgresql.Driver")
         //TODO
 //                .setUrl("jdbc:mysql://47.103.138.224:3306/foodie-shop-dev?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true")
-        .setUrl("jdbc:postgresql://")
+        .setUrl("jdbc:postgresql://101.35.90.4:32432/sft_bd")
         .setUsername("postgres")
-        .setPassword("aaaaaaaa")
-        .setSchemaName("bbbbbb");
+        .setPassword("Bmsoft@2021")
+        .setSchemaName("jssft_bmsoft");
 
     //3. 策略配置globalConfiguration中
     StrategyConfig stConfig = new StrategyConfig();
