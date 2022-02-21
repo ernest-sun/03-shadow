@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-generator" />
         <module name="assist" />
+        <module name="school" />
         <module name="commons" />
       </profile>
     </annotationProcessing>

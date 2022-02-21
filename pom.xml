@@ -12,6 +12,7 @@
     <module>mybatis-generator</module>
     <module>assist</module>
     <module>commons</module>
+    <module>school</module>
   </modules>
   <name>shadow</name>
   <description>整合各种辅助项目</description>
