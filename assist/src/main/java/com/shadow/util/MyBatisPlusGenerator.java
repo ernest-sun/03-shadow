@@ -83,7 +83,7 @@ public class MyBatisPlusGenerator {
 
         // 生成的表, 支持多表一起生成，以数组形式填写
         //TODO 两个方式，直接写，或者使用命令行输入
-        .setInclude("knowledge_base");
+        .setInclude("dws_case_sfjd_caseinfo");
     //.setInclude(scanner("表名，多个英文逗号分割").split(","));
 
     //4. 包名策略配置
