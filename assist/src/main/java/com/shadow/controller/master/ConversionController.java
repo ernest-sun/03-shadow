@@ -1,7 +1,7 @@
-package com.shadow.controller;
+package com.shadow.controller.master;
 
 import com.shadow.model.ResultVO;
-import com.shadow.service.ConversionService;
+import com.shadow.service.master.ConversionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

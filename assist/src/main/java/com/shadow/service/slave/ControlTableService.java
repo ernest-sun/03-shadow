@@ -1,4 +1,4 @@
-package com.shadow.service;
+package com.shadow.service.slave;
 
 import java.util.List;
 import java.util.Map;
@@ -8,13 +8,13 @@ import java.util.Map;
  * @description
  * @date 2022/01/07
  */
-public interface ConversionService {
+public interface ControlTableService {
 
   /**
-   * 生成字段注释
+   * 查询表名
    *
-   * @param tableName 表名
    * @return {@link List}<{@link Map}<{@link String}, {@link Object}>>
    */
-  List<Map<String, Object>> generateFieldComments(String tableName);
+  List<Map<String, Object>> queryTableName();
+
 }

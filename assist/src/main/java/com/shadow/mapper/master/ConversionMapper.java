@@ -1,4 +1,4 @@
-package com.shadow.mapper;
+package com.shadow.mapper.master;
 
 import java.util.List;
 import java.util.Map;

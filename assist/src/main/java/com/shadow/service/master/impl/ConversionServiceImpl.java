@@ -1,7 +1,7 @@
-package com.shadow.service.impl;
+package com.shadow.service.master.impl;
 
-import com.shadow.mapper.ConversionMapper;
-import com.shadow.service.ConversionService;
+import com.shadow.mapper.master.ConversionMapper;
+import com.shadow.service.master.ConversionService;
 import java.util.List;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
